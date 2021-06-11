@@ -324,4 +324,7 @@ background-color:#ceb98e;
    .timeline > li {
     text-align:left;
   }
+
+#mySidenav a {
+  position: absolute;}
 }
