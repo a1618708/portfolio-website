@@ -1,0 +1,222 @@
+/*General*/
+
+body {
+display: inline-block;
+text-align: justify;
+justify-content: center;
+/* width:100vw; */
+font-family: 'Work Sans'!important;
+font-weight:400;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+z-index:1;
+font-family:'Ubuntu', sans-serif !important;
+font-weight:500;
+}
+
+h2 {
+padding-left:15px;
+}
+
+
+
+p {
+margin-top:1rem;
+margin-bottom:1rem;
+}
+
+
+
+/*Home Page*/
+
+#home {
+  background-image: url('../img/home-bg.jpg');
+  background-position:center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#home:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:0;
+}
+
+#home h1{
+ font-size:3.5rem;
+ padding-top: 8%;
+}
+
+#home p{
+ font-size:2rem;
+}
+
+
+#home .container{
+  padding-left: 20%;
+  padding-top: 10%;
+  z-index:1;
+  text-align: left;
+}
+
+.face {
+width: 200px;
+height: 200px;
+border-radius: 100%;
+}
+
+
+/*Navigation*/
+#mySidenav a {
+  margin-top:8%;
+  position: absolute; /* Position them relative to the browser window */
+  left: -100px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 150px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: black; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  text-align:right;
+  z-index:2;
+  position: fixed;
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#mySidenav i {
+padding-left: 14px; /* 15px padding */
+}
+/* The about link: 20px from the top with a green background */
+#nav_top {
+  top: 20px;
+  background-color: #f6f5f5;
+}
+
+#nav_resume {
+  top: 80px;
+  background-color: #d3e0ea;
+}
+
+#nav_portfolio {
+  top: 140px;
+  background-color: #1687a7;
+}
+
+#nav_contact {
+  top: 200px;
+  background-color: #276678;
+}
+
+/*About section*/
+.color-section {
+padding-left: 8%;
+padding-right: 8%;
+padding-top : 5%;
+padding-bottom : 5%;
+background-color: #fdfaf6;
+width:100vw;
+}
+
+#about h1{
+ padding-top: 8%;
+}
+
+
+/*Resume*/
+.white-section {
+padding-top : 5%;
+padding-bottom : 5%;
+width:100vw;
+}
+
+.white-section h5{
+color:#bb371a;
+}
+
+.year {
+background-color: #f7f3e9;
+width: 120px;
+height:30px;
+text-align:center;
+padding-top: 8px;
+}
+.timeline {
+    list-style-type: none;
+    position: relative;
+
+}
+.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 2;
+}
+.timeline > li {
+    padding-left: 20px;
+}
+
+
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #bf1363;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+}
+
+ul ul {
+margin-left:-10px;
+list-style-type:disc;
+}
+
+
+/*Skill*/
+hr {
+width:90%;
+margin-top:0!important;
+}
+
+#skills ul {
+margin-left:-30px;
+}
+
+.skill-item{
+list-style-type:none;
+}
+
+.progress{
+width:90%;
+}
+
+
+.progress-bar{
+color:#212529!important;
+align-items: flex-end;
+background-color:#542e71!important;
+}
+
+
+/*Call to Action*/
+
+/*Footer*/
+.footer-img{
+font-size:32px;
+padding:16px;}

@@ -1,0 +1,327 @@
+/*General*/
+
+body {
+text-align: justify;
+justify-content: left;
+font-family: 'Work Sans';
+font-weight:400;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+font-family:'Ubuntu', sans-serif;
+font-weight:500;
+}
+
+p {
+margin-top:1rem auto;
+font-size:1.2rem;
+}
+
+.color-section, .white-section {
+padding: 5% 0% 5% 2%;
+}
+
+.color-section
+ {
+background-color: #fdfaf6;
+}
+
+/*Home Page*/
+
+#home {
+  background-image: url('../img/home-bg.jpg');
+  background-position:center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  text-align: left;
+  padding: 10% 0% 0% 20%;
+}
+
+#home:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:0;
+}
+
+#home .container{
+  z-index:1;
+}
+
+#home h1{
+ font-size:3.5rem;
+ padding-top: 8%;
+}
+
+#home p{
+ font-size:2rem;
+}
+
+
+.face {
+width: 15rem;
+height: 15rem;
+border-radius: 100%;
+}
+
+
+/*Navigation*/
+#mySidenav a {
+  margin-top:8%;
+  position: absolute; /* Position them relative to the browser window */
+  left: -100px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 150px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: black; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  text-align:right;
+  z-index:3;
+  position: fixed;
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#mySidenav i {
+padding-left: 14px;
+}
+#nav_top {
+  top: 20px;
+  background-color: #fdf8f6;
+}
+
+#nav_resume {
+  top: 80px;
+  background-color: #6096c2;
+}
+
+#nav_portfolio {
+  top: 140px;
+  background-color: #a1a897;
+}
+
+#nav_contact {
+  top: 200px;
+  background-color: #d9d3c7;
+}
+
+/*About*/
+
+#about h1{
+ padding-top: 12%;
+}
+
+
+/*Resume*/
+#resume {
+
+}
+#resume h2 {
+padding-left:15px;
+}
+
+
+#resume h5{
+color:#233e8b;
+}
+
+.year {
+background-color: #f7f3e9;
+width: 120px;
+height:30px;
+text-align:center;
+padding-top: 8px;
+}
+
+.timeline {
+    list-style-type: none;
+    position: relative;
+
+}
+.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 2;
+}
+.timeline > li {
+    padding-left: 20px;
+    padding-right: 5%;
+
+}
+
+
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #bf1363;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+}
+
+ul ul {
+margin-left:-10px;
+list-style-type:disc;
+}
+
+
+/*Skill*/
+hr, .progress {
+width:90%;
+margin-top:0;
+}
+
+#skills ul {
+margin-left:-30px;
+}
+
+.skill-item{
+list-style-type:none;
+}
+
+
+.progress-bar{
+color:#212529;
+align-items: flex-end;
+background-color:#542e71;
+}
+
+
+/*Portfolio*/
+
+
+.profile-card{
+    margin: 20px 3%;
+}
+
+.card-title{
+text-align:left;
+}
+
+.profile-card .card-img-block {
+    width: 91%;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+}
+
+
+.profile-card .btn{
+    border-radius:2px;
+    text-transform:uppercase;
+    font-size:12px;
+    padding:7px 20px;
+}
+
+.profile-card .card-img-block img{
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.63);
+}
+.profile-card h5{
+    color:#4E5E30;
+    font-weight:600;
+}
+.profile-card p{
+    font-size:14px;
+    font-weight:300;
+}
+.profile-card .btn-primary{
+    background-color:#4E5E30;
+    border-color:#4E5E30;
+
+}
+
+/*Contact*/
+
+.submitbtn{
+border-color: #212529;
+}
+
+.submitbtn:hover{
+background-color: #212529;
+}
+
+.form_container{
+background-image: url('../img/contact.jpg');
+padding:5% 5%;
+}
+
+#contact {
+padding-bottom: 0%;
+}
+
+/*Footer*/
+
+#footer{
+padding:2% 0% 1%;
+text-align:center;
+background-color:#fdfaf6;
+font-family:'Ubuntu', sans-serif;
+}
+
+#footer p{
+margin:0% 0%;
+
+}
+
+#footer p::after{
+content: "— "
+}
+
+.footer-img{
+width:50px;
+font-size:20px;
+border-color: #ceb98e;
+margin:0% 1rem;
+}
+
+.footer-img:hover{
+border-color: #ceb98e;
+background-color:#ceb98e;
+}
+
+@media (min-width:700px) and (max-width:800px) {
+    #home{
+
+    height:70vh;}
+
+
+   .timeline > li {
+    padding: 0 2% 0 5%;
+    text-align:left;
+  }
+  .profile-card p{
+    padding: 0 5 0 0%;
+    text-align:left;
+  }
+}
+
+@media (max-width:700px) {
+   #home{
+    height:100vh;}
+
+    .face {
+    width: 10rem;
+    height:10rem;
+    }
+
+   .timeline > li {
+    text-align:left;
+  }
+}
