@@ -326,5 +326,5 @@ background-color:#ceb98e;
   }
 
 #mySidenav a {
-  position: absolute;}
+  position: static;}
 }
