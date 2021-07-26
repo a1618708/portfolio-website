@@ -32,7 +32,7 @@ background-color: #fdfaf6;
   background-image: url('../img/home-bg.jpg');
   background-position:center;
   background-size: cover;
-  height: 100vh;
+  height: 600px;
   position: relative;
   text-align: left;
   padding: 10% 0% 0% 20%;
@@ -298,8 +298,8 @@ background-color:#ceb98e;
 
 @media (min-width:700px) and (max-width:800px) {
     #home{
+    height: 600px;}
 
-    height:70vh;}
 
 
    .timeline > li {
@@ -314,7 +314,7 @@ background-color:#ceb98e;
 
 @media (max-width:700px) {
    #home{
-    height:100vh;}
+    height: 450px;}
 
     .face {
     width: 10rem;
@@ -325,6 +325,7 @@ background-color:#ceb98e;
     text-align:left;
   }
 
-#mySidenav a {
-  position: static;}
+#mySidenav  a{
+  display:none;
+}
 }
